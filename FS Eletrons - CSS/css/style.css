@@ -1,0 +1,163 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+
+}
+
+.menu{
+    width: 100%; 
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+
+.logo{
+    
+    width: 150px;
+    border: 1px solid white;
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 5px;
+    display: inline-block;
+    width: 80%;
+    
+
+}
+
+.linkMenu {
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 5px;
+    display: inline-block;
+    width: 80%;
+    
+    
+}
+.linkMenu:hover{
+    color: purple;
+    background-color: yellow;
+    padding: 20px;
+    transition: 250ms;
+    border-radius: 10px;
+    
+    
+}
+
+h1{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#pInicio{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.pIndex{
+    margin: 115px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.pagamento{
+    color: red;
+    text-align: center;
+}
+
+.formaDePagamento{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.recode{
+    text-align: center;
+    margin-top: 10%;
+}
+#recode{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.categoria{
+    row-gap: 5 ;
+    width: 20%;
+    vertical-align: top;
+
+}
+.categoria ul li:hover{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.tdProduto{
+    width: 20%;
+    text-align: center;
+    vertical-align: bottom;
+    
+    
+
+}
+
+.tdProduto:hover{
+    border: 1px solid whitesmoke;
+}
+
+.paragrafo{
+    margin:0px
+}
+.paragrafoRiscado{
+    text-decoration: line-through;
+    margin:0px;
+    color: red;
+}
+
+.tableLoja{
+    border: 0px;
+    width: 100%;
+    padding-left: 20%;
+    
+    
+}
+
+.tdLoja{
+    width: 33%;
+}
+
+.tableContato{
+    
+    width: 100%;
+    padding-left: 10%;
+    
+   
+}
+
+.tdTableContato{
+
+    width: 50%;
+    padding-right: 100px;
+    padding-top: 100px;
+    text-align: center;
+    
+
+}
+
+.divProduto{
+    width: 75%;
+    padding-left: 25%;
+}
+
+
+
+
+
+
+
+
