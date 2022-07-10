@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VouSuave - Agencia de Viagens</title>
+    <link rel="stylesheet" href="destino.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="icon" href="imagens/logo_icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <header class="p-4 bg-danger text-white " id="menu">
+    <nav class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="../home/index.html" class="nav-link px-4  text-white navLink"><i class="bi bi-house-fill"></i>Home</a></li>
+          <li><a href="../destino/destino.html" class="nav-link px-4  text-white navLink"><i class="bi bi-arrow-up-right-circle-fill"></i>Destino</a></li>
+          <li>
+            <a href="../promoções/promoções.html" class="nav-link px-4 text-white navLink"><i class="bi bi-cash-coin"></i>Promoções</a>
+          </li>
+          <li><a href="../contato/contato.html" class="nav-link px-4 text-white navLink"><i class="bi bi-envelope"></i>Contato</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark bg-light" placeholder="Procurar" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <a href="#"><button type="button" class="btn btn-outline-light me-2" data-toggle="modal" data-target="#modalLogin">Login</button></a> 
+          <a href="#"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCadastro">Cadastro</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+      <a href="#menu"><div id="topo"><i class="bi bi-arrow-up-circle-fill fs-1 text-danger"></i></div></a>
+      <article class="article">
+        <section class="container w-75 section p-5 border rounded">
+          <h1 class="h2">Escolha O Tipo De Passagem Que você Procura:</h1>
+          <a href="#avião"><button type="button" class="btn btn-warning mx-5 mb-2">Avião</button></a>
+          <a href="#ônibus"><button type="button" class="btn btn-warning mx-5 mb-2">Ônibus</button></a>
+          <a href="#cruzeiro"><button type="button" class="btn btn-warning mx-5 mb-2">Cruzeiro</button></a>
+        </section>
+        <div class="card mx-5 my-5 text-center " id="cardMilhas">
+          <div class="card-header bg-warning">
+            Aproveite
+          </div>
+          <div class="card-body" id="colorCard">
+            <h5 class="card-title">Tem Milhas Sobrando?</h5>
+            <p class="card-text">Transforme suas milhas em desconto.</p>
+            <a href="https://hotmilhas.com.br/?utm_source=123Milhas&utm_medium=MenuPrincipal&utm_campaign=Capa" target="_blank" class="btn btn-danger">Ver desconto</a>
+          </div>
+        </div> 
+        <hr>
+        <section class="container mt-5 pt-5" id="passagensAérea">
+          <div class="text-center">
+            <i class="fa-solid fa-plane-departure"></i>
+            <h2 class="h3 d-inline" id="avião">Passagens Aéreas</h2>
+            <p class="text-muted">Saindo do Rio de Janeiro</p>
+            <h3 class="h2 mb-5">Voos com preços imperdíveis</h3>
+          </div>
+          <div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Salvador.jpg" class="card-img-top rounded-4" alt="Imagem Salvador">
+                  <div class="card-body">
+                    <h5 class="card-title">Salvador</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Salvador agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger mb-2" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Maceió.jpg" class="card-img-top rounded-4 " alt="Imagem Maceió">
+                  <div class="card-body">
+                    <h5 class="card-title">Maceió</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Maceió agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger mb-2" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Fortaleza.jpg" class="card-img-top rounded-4" alt="Imagem Fortaleza">
+                  <div class="card-body">
+                    <h5 class="card-title">Fortaleza</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Fortaleza agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/FozDoIguaçu.jpg" class="card-img-top rounded-4" alt="Imagem Foz do Iguaçu">
+                  <div class="card-body">
+                    <h5 class="card-title">Foz do Iguaçu</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Foz do Iguaçu agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Recife.jpg" class="card-img-top rounded-4" alt="Imagem Recife">
+                  <div class="card-body">
+                    <h5 class="card-title">Recife</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Recife agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/SãoPaulo.jpg" class="card-img-top rounded-4" alt="Imagem São Paulo">
+                  <div class="card-body">
+                    <h5 class="card-title">São Paulo</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para São Paulo agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 pt-5" id="passagensônibus">
+          <div class="text-center">
+            <i class="fa-solid fa-bus"></i>
+            <h2 class="h3 d-inline" id="ônibus">Passagens De Ônibus</h2>
+            <p class="text-muted">Saindo do Rio de Janeiro</p>
+            <h3 class="h2 mb-5">Passagens com preços imperdíveis</h3>
+          </div>
+          <div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/BeloHorizonte.jpg" class="card-img-top rounded-4" alt="Imagem Salvador">
+                  <div class="card-body">
+                    <h5 class="card-title">Belo Horizonte</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Belo Horizonte agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger " href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/VilaVelha.jpg" class="card-img-top rounded-4" alt="Imagem Gramado">
+                  <div class="card-body">
+                    <h5 class="card-title">Vila Velha</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Vila Velha agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Natal.jpg" class="card-img-top rounded-4" alt="Imagem Fortaleza">
+                  <div class="card-body">
+                    <h5 class="card-title">Natal</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Natal agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Curitiba.jpg" class="card-img-top rounded-4" alt="Imagem Foz do Iguaçu">
+                  <div class="card-body">
+                    <h5 class="card-title">Curitiba</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Curitiba agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Manaus.jpg" class="card-img-top rounded-4" alt="Imagem Recife">
+                  <div class="card-body">
+                    <h5 class="card-title">Manaus</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Manaus agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-5 hoverCards">
+                  <img src="imagens/Campinas.jpg" class="card-img-top rounded-4" alt="Imagem São Paulo">
+                  <div class="card-body">
+                    <h5 class="card-title">Campinas</h5>
+                    <p class="card-text mb-1 fs-5">Agende sua viagem para Campinas agora mesmo</p>
+                    <p class="mt-3 mb-0">Passagens a partir de</p>
+                    <p class="mb-0 mt-1 text-decoration-line-through">R$639</p>
+                    <p class="h4 text-danger">R$<strong>525</strong></p>
+                    <hr>
+                    <a class="btn btn-danger" href="#" role="button">Conferir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 pt-5" id="passagensCruzeiro">
+          <div class="text-center">
+            <i class="fa-solid fa-anchor"></i>
+            <h2 class="h3 d-inline" id="cruzeiro">Cruzeiros</h2>
+            <p class="text-muted">All Inclusive</p>
+            <h3 class="h2 mb-5 pb-5">Cruzeiros com preços imperdíveis</h3>
+          </div>
+          
+        <div class="card mb-3 rounded-5">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="imagens/cruzeiro1.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title d-inline">América do Sul,</h3>
+                <p class="card-text d-inline fs-5">3 Noites</p>
+                <p class="card-text mt-5 mb-0">Ponto de Embarque: Rio de Janeiro</p>
+                <p class="card-text mb-5">Ponto de Desembarque: Rio de Janeiro</p>
+                <p>Datas Disponiveis:</p>
+                <p class="d-inline bg-warning">11/7</p>
+                <a class="btn btn-danger" href="#" role="button">Itinerário</a>
+              </div>
+            </div>
+            <div class="col-md-4 bg-warning rounded-5">
+              <div class="card-body text-center">
+                <p class="card-title fs-5">Primeiro hóspede a partir de</p>
+                <p class="h3 card-text d-inline">R$1835</p>
+                <p class="card-text d-inline">*p.p</p>
+                <p class="mt-5">Em até 12x sem juros de <b>R$153,25</b></p>
+                <a class="btn btn-outline-danger mt-5" href="#" role="button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 rounded-5">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="imagens/cruzeiro2.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title d-inline">América do Sul,</h3>
+                <p class="card-text d-inline fs-5">3 Noites</p>
+                <p class="card-text mt-5 mb-0">Ponto de Embarque: Santos(SP)</p>
+                <p class="card-text mb-5">Ponto de Desembarque: Santos(SP)</p>
+                <p>Datas Disponiveis:</p>
+                <p class="d-inline bg-warning">15/8</p>
+                <p class="d-inline bg-warning">18/9</p>
+                <a class="btn btn-danger" href="#" role="button">Itinerário</a>
+              </div>
+            </div>
+            <div class="col-md-4 bg-warning rounded-5">
+              <div class="card-body text-center">
+                <p class="card-title fs-5">Primeiro hóspede a partir de</p>
+                <p class="h3 card-text d-inline">R$1559</p>
+                <p class="card-text d-inline">*p.p</p>
+                <p class="mt-5">Em até 12x sem juros de <b>R$129,92</b></p>
+                <a class="btn btn-outline-danger mt-5" href="#" role="button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 rounded-5">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="imagens/cruzeiro3.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title d-inline">América do Sul,</h3>
+                <p class="card-text d-inline fs-5">3 Noites</p>
+                <p class="card-text mt-5 mb-0">Ponto de Embarque: Rio de Janeiro</p>
+                <p class="card-text mb-5">Ponto de Desembarque: Itajaí(BC)</p>
+                <p>Datas Disponiveis:</p>
+                <p class="d-inline bg-warning">20/11</p>
+                <a class="btn btn-danger" href="#" role="button">Itinerário</a>
+              </div>
+            </div>
+            <div class="col-md-4 bg-warning rounded-5">
+              <div class="card-body text-center">
+                <p class="card-title fs-5">Primeiro hóspede a partir de</p>
+                <p class="h3 card-text d-inline">R$1539</p>
+                <p class="card-text d-inline">*p.p</p>
+                <p class="mt-5">Em até 12x sem juros de <b>R$128,25</b></p>
+                <a class="btn btn-outline-danger mt-5" href="#" role="button">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+      </section>
+      <br><br>
+      <hr>
+      <footer class="container pt-5">
+        <table class="table text-center table-borderless">
+          <tr>
+            <th class="col-4">
+            VouSuave
+            </th>
+            <th class="col-4">
+              Televendas
+            </th>
+            <th class="col-4">
+              Central de Atendimento
+            </th>     
+          </tr>
+          <tr>
+            <td ><a class="textLink" href="../paginasAuxiliares/sobreNós.html">Sobre Nós</a></td>
+            <td>0800 0800</td>
+            <td>Suporte Pós Venda - 21 88888 9999</td>
+          </tr>
+          <tr>
+            <td><a href="../paginasAuxiliares/trabalheConosco.html" class="textLink">Trabalhe Conosco</a></td>
+            <td>Segunda a sexta: 09h às 21h</td>
+            <td>SAC: 21 99999 9999</td>
+          </tr>
+          <tr>
+            <td><a href="../paginasAuxiliares/termosDeUso.html" class="textLink">Termos de Uso</a></td>
+            <td>Sábado: 09h às 21h</td>
+            <td><a href="../paginasAuxiliares/centralDeAjuda.html" class="textLink">Central de Ajuda</a></td>
+          </tr>
+        </table>
+        <br><br>
+        <hr>
+        <div class="container px-5 py-5" id="icon-grid">
+          <div class="row g-0 px-5 py-5 ">
+            <div class="col d-flex align-items-start">
+              <div>
+                <a href="#" class="text-decoration-none text-dark">
+                  <h4 class="fw-bold mb-0">Baixe Nosso App</h4>
+                  <img src="../destino/imagens/logo_icon.png" class="ms-4" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-star" id="redesSociais">
+              <div>
+                <p class="fw-bold mb-0">Nos Siga Nas Redes Sociais</p>
+                <a href="#"><img src="../rodape/iconFacebook.png" alt="link Facebook" id="facebook"></a>
+                <a href="#"><img src="../rodape/iconTwitter.png" alt="link Twitter" id="twitter"></a>
+                <a href="#"><img src="../rodape/iconInstagram.png" alt="link Instagram" id="instagram"></a>
+              </div>
+              </div>
+          </div>
+        </div>
+          
+        <div class="text-center"> 
+          <h6>Formas de Pagamento</h6>
+          <img class="formaDePagamento" src="../rodape/formasDePagamento.png" alt="formas de pagamento">
+        </div>
+      </footer>        
+      <br>
+      </article>
+      
+  </main>
+      
+
+
+    <!--Modal-->
+    <div class="modal modal-signin fade" tabindex="-1" role="dialog" id="modalCadastro">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- <h5 class="modal-title">Modal title</h5> -->
+            <h2 class="fw-bold mb-0">Cadastre-se grátis</h2>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInputC" placeholder="name@example.com">
+                <label for="floatingInput">Digite seu Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPasswordC" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Cadastrar</button>
+              <small class="text-muted">Ao cliclar em cadastrar, você concorda com os termos de uso</small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Ou Use Algumas Das Opções</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                Entre com Twitter
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                Entre com Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                Entre com GitHub
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal modal-signin fade" tabindex="-1" role="dialog" id="modalLogin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- <h5 class="modal-title">Modal title</h5> -->
+            <h2 class="fw-bold mb-0">Entrar</h2>
+            <button type="button" class="btn-close" data-dimiss="modal" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInputL" placeholder="name@example.com">
+                <label for="floatingInput">Digite seu Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPasswordL" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Entre com</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                Twitter
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                GitHub
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

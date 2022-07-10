@@ -1,0 +1,160 @@
+.navLink:hover{
+    background-color: lightcoral;
+    border-radius: 10px;
+    transition: 150ms;
+}
+
+.article{
+    background-image: url(imagens/fundo2.png); background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 400px;
+}
+
+.section{
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.548);
+    text-align: center;
+    margin-left:15%;
+    
+
+    
+}
+
+#tituloForm{
+    
+    font-family:monospace ;
+    color: darkred;
+    font-style: italic;
+}
+#cardMilhas{
+    margin-top: 350px;
+    
+    
+}
+
+#colorCard{
+    background-color: rgba(184, 184, 184, 0.377);
+}
+    
+.buttomCards{
+    margin-left: 50%;
+}
+
+#footer{
+    
+    padding-top: 700px;
+}
+
+@media screen and (max-width: 575px) {
+
+    #footer{
+        padding-top: 975px;
+        position: absolute;
+        margin-top: 100%;
+
+
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 770px) {
+
+    #footer{
+        padding-top: 0px;
+        position: absolute;
+        margin-top: 45%;
+
+
+    }
+}
+
+.textLink{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:768px) {
+
+    #hr{
+        visibility: hidden;
+    }
+
+    #linkHidden{
+        visibility: hidden;
+    }
+    
+}
+
+#sectionApp{
+    
+    background: linear-gradient(90deg, rgba(246,5,1,1) 0%, rgba(203,62,30,1) 35%, rgba(235,244,34,1) 100%);
+    
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 50px;
+}
+
+
+.adApp{
+    display: inline;
+    
+}
+
+
+
+.inline{
+    display: inline;
+}
+
+
+#baixarApp{
+    
+    color: black;
+}
+
+#inlineBlock{
+    display: inline-block;
+}
+
+#facebook, #instagram, #twitter{
+    width: 50px;
+}
+
+@media screen and (max-width: 992px){
+    
+    #imgQuemSomos{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    .quemSomos{
+        columns: 2;
+        
+    }
+    
+}
+
+.formaDePagamento{
+    width: 250px;
+}
+
+@media screen and (min-width: 388px) and (max-width: 447px) {
+
+        #redesSociais{
+            
+            padding: 30px;
+        }
+}
+
+
+
+@media screen and (min-width: 448px) and (max-width: 533px) {
+
+    #redesSociais{
+
+        margin-left: 30px;
+    }
+}
+
