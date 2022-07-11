@@ -1,4 +1,4 @@
-Algoritmo "semnome"
+Algoritmo "AgÃªcia de Viagens"
 Var
 clientes:  vetor[1..3, 1..5] de caractere
 dados: vetor[1..5] de caractere
@@ -24,10 +24,10 @@ dados[4] <- "Origem: "
 dados[5] <- "Destino: "
 
 escreval("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-escreval("           Agência de Viagens VouSuave          ")
+escreval("           AgÃªncia de Viagens VouSuave          ")
 escreval("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 escreval()
-escreval("Olá, Insira seus dados para cadastro")
+escreval("OlÃ¡, Insira seus dados para cadastro")
 escreval()
 para indexX de 1 ate 3 passo 1 faca
   para indexY de 1 ate 5 passo 1 faca
